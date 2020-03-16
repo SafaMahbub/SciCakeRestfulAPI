@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+  <Appenders>
+    <Console name="stdout">
+      <PatternLayout>
+        <Pattern>%d %p %c{1} %m%n</Pattern>
+      </PatternLayout>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="springrest" level="debug">
+      <AppenderRef ref="stdout"/>
+    </Logger>
+    <Root level="warn">
+      <AppenderRef ref="stdout"/>
+    </Root>
+  </Loggers>
+</Configuration>
